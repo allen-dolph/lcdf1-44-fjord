@@ -311,6 +311,7 @@ models:
       - type: markdown
         name: content
         label: Content
+        description: The main content of the page in markdown
       - type: model
         name: seo
         models:
