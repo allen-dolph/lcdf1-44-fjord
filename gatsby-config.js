@@ -44,32 +44,32 @@ module.exports = {
                 `,
                 feeds: [
                     {
-                        serialize: ({ query: { site, allSitePage } }) => {
-                        return allSitePage.nodes.map(node => {
+                        serialize: ({ query: { site, allMarkdownRemark } }) => {
+                        return allMarkdownRemark.nodes.map(node => {
                             return Object.assign({}, node.frontmatter, {
-                            description: node.context.frontmatter.title,
-                            date: node.context.frontmatter.date,
-                            url: site.siteMetadata.siteUrl + node.path,
-                            guid: site.siteMetadata.siteUrl + node.id,
-                            custom_elements: [{ "content:encoded": node.context.html }],
+                            description: node.frontmatter.title,
+                            date: node.frontmatter.date,
+                            url: site.siteMetadata.domain + node.path,
+                            guid: site.siteMetadata.domain + node.id,
+                            custom_elements: [{ "content:encoded": node.html }],
                             })
                         })
                         },
                         query: `
                         {
-                            allSitePage(filter: {context: {frontmatter: {date: {gte: "2020-01-01"}}}}, sort: {order: DESC, fields: context___frontmatter___date}) {
+                            allMarkdownRemark(filter: {frontmatter: {date: {gte: "2020-01-01"}}}, sort: {order: DESC, fields: frontmatter___date}) {
                                 nodes {
                                     id
-                                    path
-                                    context {
-                                        name
-                                        html
-                                        frontmatter {
-                                            title
-                                            date
-                                        }
+                                    html
+                                    fields {
+                                      name
+                                      url
                                     }
-                                }
+                                    frontmatter {
+                                      date
+                                      title
+                                    }
+                                  }
                             }
                         }
                         `,
