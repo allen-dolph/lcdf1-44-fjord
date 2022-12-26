@@ -1,0 +1,90 @@
+{
+    "domain": "https://www.lcd44.com",
+    "favicon": "https://cdn.sanity.io/images/z8zcrwl0/production/6f18abdc516989e22e3b5cd03ebebe6ef52784bd-192x192.png",
+    "footer": {
+        "content": "&copy; Landon Cordero-Dolph. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>.",
+        "type": "footer"
+    },
+    "header": {
+        "background_img": "https://cdn.sanity.io/images/z8zcrwl0/production/045838fb81bba18883f74b1259d9eff7f46180e2-2075x3265.jpg",
+        "has_nav": true,
+        "has_social": true,
+        "logo_img": "https://cdn.sanity.io/images/z8zcrwl0/production/c93dc72de2eec95e8224c902de11827af843c4df-300x300.png",
+        "logo_img_alt": "Landon Cordero-Dolph",
+        "nav_links": [
+            {
+                "label": "Home",
+                "style": "link",
+                "type": "action",
+                "url": "/"
+            },
+            {
+                "label": "About",
+                "style": "link",
+                "type": "action",
+                "url": "/about"
+            },
+            {
+                "icon_class": "dev",
+                "label": "Partners",
+                "new_window": false,
+                "no_follow": false,
+                "style": "link",
+                "type": "action",
+                "url": "/partners"
+            },
+            {
+                "label": "Results",
+                "style": "link",
+                "type": "action",
+                "url": "/results"
+            },
+            {
+                "label": "Contact",
+                "style": "link",
+                "type": "action",
+                "url": "/contact"
+            }
+        ],
+        "social_links": [
+            {
+                "icon_class": "twitter",
+                "label": "Twitter",
+                "new_window": true,
+                "style": "icon",
+                "type": "action",
+                "url": "https://twitter.com/LCDF1"
+            },
+            {
+                "icon_class": "instagram",
+                "label": "Instagram",
+                "new_window": true,
+                "style": "icon",
+                "type": "action",
+                "url": "https://www.instagram.com/lcdf1_44"
+            },
+            {
+                "icon_class": "facebook",
+                "label": "Facebook",
+                "new_window": true,
+                "style": "icon",
+                "type": "action",
+                "url": "https://facebook.com/Landon-Cordero-Dolph-378036733055102"
+            },
+            {
+                "icon_class": "youtube",
+                "label": "Youtube",
+                "new_window": true,
+                "no_follow": false,
+                "style": "icon",
+                "type": "action",
+                "url": "https://www.youtube.com/channel/UComCA62tst1j5GiFBmAoH2w"
+            }
+        ],
+        "tagline": "Landon Cordero-Dolph",
+        "title": "Landon Cordero-Dolph",
+        "type": "header"
+    },
+    "palette": "yellow",
+    "title": "Landon Cordero-Dolph - Cadet Kart Racer"
+}
